@@ -93,7 +93,6 @@ export function Navbar() {
                       <span className="font-semibold text-base group-hover:text-[#fde047] transition-colors">{item.name}</span>
                     </Link>
                   ) : (
-                    // Energia resta informativa e non cliccabile finche la pagina dedicata non e disponibile.
                     <div key={item.name} className="flex flex-col gap-3 p-3 rounded-xl text-white/40 cursor-not-allowed">
                       <div className="w-full aspect-video rounded-lg overflow-hidden border border-white/5 shadow-md relative">
                         <img src={item.image} alt={item.name} className="w-full h-full object-cover opacity-40 grayscale-[50%]" />
@@ -123,10 +122,14 @@ export function Navbar() {
       
       <div className={`fixed top-0 left-0 bottom-0 w-[280px] bg-[#011C27] z-[10000] transform transition-transform duration-300 border-r border-[#0e7490]/20 flex flex-col ${isOpen ? "translate-x-0" : "-translate-x-full"}`}>
         
-        {/* Intestazione della sidebar: identifica il menu e offre il controllo di chiusura. */}
-        <div className="flex justify-between items-center p-6 border-b border-[#0e7490]/20 shrink-0">
-          <span className="text-lg font-bold tracking-widest text-[#38bdf8]">MENU</span>
-          <button onClick={closeAllMenus} className="text-[#fde047]">
+        {/* Intestazione della sidebar: Modificata altezza del logo (da h-8 a h-12) */}
+        <div className="flex justify-between items-start p-6 border-b border-[#0e7490]/20 shrink-0">
+          <div className="flex flex-col gap-8">
+            {/* <-- MODIFICA QUI: classe h-12 invece di h-8 per un logo più grande --> */}
+            <img src="/fico-logo.png" alt="FI.CO. SRL" className="h-12 w-auto object-contain" />
+            <span className="text-sm font-bold tracking-widest text-[#38bdf8] uppercase">MENU</span>
+          </div>
+          <button onClick={closeAllMenus} className="text-[#fde047] pt-1">
             <X size={26} />
           </button>
         </div>
@@ -184,7 +187,6 @@ export function Navbar() {
 
           {/* Footer della sidebar: completa il menu mobile con identita del brand, social e copyright. */}
           <div className="mt-auto pt-10 flex flex-col items-start">
-            <img src="/fico-logo.png" alt="FI.CO. SRL" className="h-6 w-auto object-contain mb-4" />
             <p className="text-[12px] text-gray-400 leading-relaxed mb-5">
               Telecomunicazioni, reti in fibra ottica, ingegneria, permitting e servizi IT per enti pubblici e privati.
             </p>

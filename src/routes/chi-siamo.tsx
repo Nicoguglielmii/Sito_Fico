@@ -190,8 +190,7 @@ function ChiSiamo() {
             <div className="space-y-8 md:space-y-12">
               <Reveal delay={100}>
                 <div>
-                  <h3 className="text-xl md:text-2xl font-bold text-white mb-3 flex items-center gap-3">
-                    <div className="w-2 h-2 rounded-full bg-[#facc15] shrink-0" />
+                  <h3 className="text-3xl md:text-4xl font-bold text-[#38bdf8] mb-3">
                     Tre punti. Infinite connessioni.
                   </h3>
                   <p className="text-white/70 text-sm md:text-base leading-relaxed text-justify">

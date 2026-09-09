@@ -36,7 +36,7 @@ import appCss from "../styles.css?url";
 import { reportError } from "../lib/error-reporting";
 import { Navbar } from "../components/site/Navbar";
 import { Footer } from "../components/site/Footer";
-import { BackToTop } from "../components/site/Reveal";
+
 import { CookieBanner } from "../components/site/Interactive";
 
 // Fallback visivo per le URL che non corrispondono a nessuna route.
@@ -201,7 +201,7 @@ function RootComponent() {
         </main>
 
         <Footer />
-        <BackToTop />
+        
         <CookieBanner />
       </div>
     </QueryClientProvider>

@@ -156,33 +156,3 @@ export function Tilt({
     </div>
   );
 }
-
-export function BackToTop() {
-  // Il pulsante resta invisibile e non interattivo finché l'utente non ha superato
-  // una distanza sufficiente per rendere utile il ritorno all'inizio.
-  const ref = useRef<HTMLButtonElement>(null);
-  useEffect(() => {
-    const onScroll = () => {
-      const el = ref.current;
-      if (!el) return;
-      // Opacità e pointer-events vengono aggiornati insieme per evitare click su un
-      // controllo invisibile quando la pagina si trova ancora nella parte alta.
-      el.style.opacity = window.scrollY > 600 ? "1" : "0";
-      el.style.pointerEvents = window.scrollY > 600 ? "auto" : "none";
-    };
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-  return (
-    <button
-      ref={ref}
-      // Lo scroll morbido riporta alla hero senza interrompere bruscamente la lettura.
-      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      aria-label="Torna su"
-      className="fixed bottom-6 right-6 z-40 grid place-items-center w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent text-white shadow-lg opacity-0 transition-opacity hover:scale-110 duration-300"
-      style={{ transitionProperty: "opacity, transform" }}
-    >
-      ↑
-    </button>
-  );
-}

@@ -193,10 +193,10 @@ function Index() {
         AREE DI ATTIVITA: presenta i tre ambiti principali con sintesi, immagine e
         collegamento dedicato. Energia resta informativa finche la pagina non sara disponibile.
       */}
-      <section className="pt-8 md:pt-12 pb-0 relative z-20 w-full overflow-hidden">
+      <section className="pt-0 md:pt-0 pb-0 relative z-20 w-full overflow-hidden">
         <div className="container-x">
           <Reveal>
-            <div className="mb-10 md:mb-20">
+            <div className="mb-7 md:mb-10">
               <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[5.5rem] font-bold leading-[1.05] tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-[#38bdf8] to-[#dfe7d3] pb-2">
                 Tre aree, un unico approccio.
               </h2>
@@ -206,10 +206,10 @@ function Index() {
             </div>
           </Reveal>
 
-          <div className="flex flex-col gap-8 md:gap-10">
+          <div className="flex flex-col gap-2 md:gap-3">
             {/* 1. FIBRA & MOBILE: servizio infrastrutturale con approfondimento navigabile. */}
             <Reveal delay={100}>
-              <div className="flex flex-col md:flex-row md:items-start gap-5 md:gap-8 py-4 border-b border-white/10 last:border-b-0">
+              <div className="flex flex-col md:flex-row md:items-start gap-5 md:gap-8 py-1 border-b border-white/10 last:border-b-0">
                 <Link 
                   to="/servizi/fibra-mobile" 
                   className="block group overflow-hidden rounded-2xl shrink-0 w-full md:max-w-[420px] border border-white/10"
@@ -221,8 +221,8 @@ function Index() {
                   />
                 </Link>
                 <div className="flex-1 max-w-4xl text-left">
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 pb-2 bg-gradient-to-r from-[#38bdf8] to-[#dfe7d3] bg-clip-text text-transparent">Fibra & Mobile</h3>
-                  <p className="text-sm sm:text-base md:text-lg text-white/70 leading-relaxed mb-4 sm:mb-5 max-w-3xl text-justify">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-0 sm:mb-1 pb-2 bg-gradient-to-r from-[#38bdf8] to-[#dfe7d3] bg-clip-text text-transparent">Fibra & Mobile</h3>
+                  <p className="text-sm sm:text-base md:text-lg text-white/70 leading-relaxed mb-1 sm:mb-2 max-w-3xl text-justify">
                     Dalla survey al network design, dal permitting all'implementazione, fino agli As-Built e al supporto: gestiamo l'intero ciclo di sviluppo delle infrastrutture di telecomunicazione.
                   </p>
                   <Link to="/servizi/fibra-mobile" className="inline-flex items-center text-[#facc15] text-sm sm:text-base md:text-lg font-bold hover:text-yellow-300 gap-2">
@@ -284,8 +284,8 @@ function Index() {
           </div>
 
           <Reveal delay={400}>
-            <div className="mt-10 sm:mt-12 text-left">
-              <p className="text-lg sm:text-xl text-[#38bdf8] font-medium tracking-wide">
+            <div className="mt-4 sm:mt-5 text-left">
+              <p className="text-lg sm:text-xl font-medium tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-[#38bdf8] to-[#facc15]">
                 Ricerca e innovazione attraversano ogni area, connettendo infrastrutture, dati e nuove tecnologie.
               </p>
             </div>
@@ -297,7 +297,7 @@ function Index() {
         IL NOSTRO METODO: mostra le cinque fasi che trasformano un'esigenza in un
         risultato verificabile, dall'analisi iniziale all'evoluzione della soluzione.
       */}
-      <section className="pt-12 md:pt-20 pb-0 md:pb-8 relative z-20 w-full overflow-hidden">
+      <section className="pt-4 md:pt-6 pb-0 md:pb-8 relative z-20 w-full overflow-hidden">
         <div className="container-x">
           <div className="max-w-3xl mb-12 md:mb-20 text-left">
             <Reveal>
